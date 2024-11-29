@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2vmax;
+    background-color: #2A2F4F;
+    color: #F0F0F0;
+}
+
+.hero{
+    height: 85%;
+    width: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.leader-board{
+    height: 25%;
+    width: 100%;
+    display: flex;
+}
+
+.box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Josefin Slab", serif;
+    background-color: #2A2F4F;
+    color: #F0F0F0;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.8), 
+                inset -3px -3px 8px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.05);
+}
+
+.box h2{
+    font-size: 2.3vw;
+}
+
+.box h3{
+    font-size: 1.8vw;
+}
+
+.game-op{
+    height: 48%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Josefin Slab", serif;
+    color: #26355D;
+}
+
+.game-op h4{
+    font-size: 2.5vw;
+}
+
+.game-op p{
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+
+.btns{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns button{
+    height: 80%;
+    width: 15%;
+    border-radius: 50%;
+    transition: background-color 0.5s , width 0.1s , height 0.1s;
+}
+
+.btns button.rock{
+    border: 4px outset #640D5F;
+}
+
+.btns button.paper{
+    border: 4px outset #D91656;
+}
+
+.btns button.scissors{
+    border: 4px outset #FFB200;
+}
+
+.btns button.rock:hover{
+    background-color: #640D5F;
+}
+
+.btns button.paper:hover{
+    background-color: #D91656;
+}
+
+.btns button.scissors:hover{
+    background-color: #FFB200;
+}
+
+.btns button:active{
+    width: 20%;
+    height: 100%;
+}
+
+.btns button > img{
+    height: auto;
+    width: 100%;
+}
+
+.reset{
+    background-color: #85A98F;
+    border: 4px outset #47663B;
+    color: #FFF8DE;
+    font-size: 2vw;
+    font-family: "Josefin Slab", serif;
+}
+
+button{
+    cursor: pointer;
+}
